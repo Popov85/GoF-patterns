@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class App {
         public static void main(String[] args) {
-                ApplicationContext context = new ClassPathXmlApplicationContext("application-context.xml");
+                ApplicationContext context = new ClassPathXmlApplicationContext("observer-context.xml");
                 Airport airport = (Airport) context.getBean("airport");
 
                 Observer panel = (Panel) context.getBean("panel");

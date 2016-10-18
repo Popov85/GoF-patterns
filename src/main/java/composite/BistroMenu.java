@@ -1,6 +1,7 @@
 package composite;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -8,11 +9,16 @@ import java.util.List;
  */
 public class BistroMenu extends Component {
 
-        private List<Component> components;
+        private List<Component> components = new ArrayList<>();
+
+        protected BistroMenu(String name, boolean isItem) {
+                super(name, isItem);
+        }
 
         @Override
         public void print() {
                 for (Component component : components) {
+                        if (!component.isItem) System.out.println("Submenu:" + component.name);
                         component.print();
                 } 
         }
@@ -24,5 +30,13 @@ public class BistroMenu extends Component {
                         sum = sum.add(component.getPrice());
                 }
                 return sum;
+        }
+
+        public void add(Component component) {
+                components.add(component);
+        }
+
+        public void remove(Component component) {
+                components.remove(component);
         }
 }
