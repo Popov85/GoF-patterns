@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;foo.bar.memento&apos; to &apos;day-8-memento-1-fixed/src&apos;&#x0A;- Original project: &apos;day-8-memento-1&apos;&#x0A;- Destination element: &apos;day-8-memento-1-fixed/src&apos;&#x0A;- Original element: &apos;day-8-memento-1/src/foo.bar.memento&apos;" description="Copy package" destination="=day-8-memento-1-fixed/src" element1="/src&lt;foo.bar.memento" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1297953857559" version="1.0"/>
-</session>
