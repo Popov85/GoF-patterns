@@ -1,9 +1,9 @@
-package ChainResponsibility;
+package chain_responsibility;
 
 /**
  * Created by Andrey on 10/22/2016.
  */
-public class SystemHandler implements Handler {
+public class ButtonHandler implements Handler {
 
         private Handler handler;
 
@@ -13,6 +13,8 @@ public class SystemHandler implements Handler {
 
         @Override
         public void showHelp() {
-                System.out.println("System help. Able to handle!");
+                System.out.println("Button help. Cannot handle and proceed...");
+                setSuccessor(new WindowHandler());
+                handler.showHelp();
         }
 }

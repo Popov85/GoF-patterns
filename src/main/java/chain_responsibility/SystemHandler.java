@@ -1,9 +1,9 @@
-package ChainResponsibility;
+package chain_responsibility;
 
 /**
  * Created by Andrey on 10/22/2016.
  */
-public class WindowHandler implements Handler {
+public class SystemHandler implements Handler {
 
         private Handler handler;
 
@@ -13,9 +13,6 @@ public class WindowHandler implements Handler {
 
         @Override
         public void showHelp() {
-                System.out.println("Window help. Cannot handle and proceed...");
-                setSuccessor(new SystemHandler());
-                handler.showHelp();
+                System.out.println("System help. Able to handle!");
         }
-
 }

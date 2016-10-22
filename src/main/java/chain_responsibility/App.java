@@ -1,4 +1,4 @@
-package ChainResponsibility;
+package chain_responsibility;
 
 /**
  * Created by Andrey on 10/22/2016.
